@@ -1,0 +1,59 @@
+.smooth-dnd-container {
+  position: relative;
+}
+
+.smooth-dnd-container * {
+  box-sizing: border-box;
+}
+
+.smooth-dnd-container.horizontal {
+  white-space: nowrap;
+}
+
+.smooth-dnd-container.horizontal > .smooth-dnd-stretcher-element {
+  display: inline-block;
+}
+
+.smooth-dnd-container.horizontal > .smooth-dnd-draggable-wrapper {
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.smooth-dnd-container.vertical > .smooth-dnd-draggable-wrapper {
+  overflow: hidden;
+  display: block;
+}
+
+.smooth-dnd-draggable-wrapper.horizontal{
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.smooth-dnd-draggable-wrapper.vertical {
+  overflow: hidden;
+  display: block;
+}
+
+.smooth-dnd-draggable-wrapper.animated {
+  transition: transform ease;
+}
+
+.smooth-dnd-ghost * {
+  box-sizing: border-box;
+}
+
+.smooth-dnd-ghost.animated {
+  transition: all ease-in-out;
+}
+
+.smooth-dnd-disable-touch-action * {
+  touch-actions: none;
+}
+
+.smooth-dnd-no-user-select * {
+  user-select: none;
+}
